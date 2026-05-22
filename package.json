@@ -1,0 +1,28 @@
+{
+  "name": "web-app-sample",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/web-app-sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/web-app-sample/issues"
+  },
+  "homepage": "https://github.com/username/web-app-sample#readme",
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14"
+  }
+}

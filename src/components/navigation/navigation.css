@@ -10,8 +10,8 @@
   right: 0;
   bottom: env(safe-area-inset-bottom);
   left: 0;
-  
-  border-radius: calc(var(--height)/2);
+
+  border-radius: calc(var(--height) / 2);
 
   height: var(--height);
   width: fit-content;
@@ -32,13 +32,13 @@
   position: absolute;
   z-index: 2;
   top: 0;
-  left: calc(var(--btn-width)*var(--focus-no));
+  left: calc(var(--btn-width) * var(--focus-no));
 
   height: 100%;
   width: var(--btn-width);
-  
+
   border: none;
-  border-radius: calc(var(--height)/2);
+  border-radius: calc(var(--height) / 2);
 
   background-color: var(--secondary-bg);
   opacity: 0.3;

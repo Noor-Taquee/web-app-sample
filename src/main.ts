@@ -11,4 +11,3 @@ import { settingsPanel } from "./pages/settings-panel/page.js";
 homePanel.dataset.index = "0";
 examplePanel.dataset.index = "1";
 settingsPanel.dataset.index = "2";
-

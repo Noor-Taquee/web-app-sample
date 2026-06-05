@@ -13,13 +13,13 @@ const panelBar = createElement("div", {
 const panelNameDiv = createElement("div", {
   className: "panel-name-div",
 });
-  const panelName = createElement("p", {
-    className: "panel-name",
-    textContent: "Home",
-  });
-panelNameDiv.append( panelName );
+const panelName = createElement("p", {
+  className: "panel-name",
+  textContent: "Home",
+});
+panelNameDiv.append(panelName);
 
-panelBar.append( panelNameDiv );
+panelBar.append(panelNameDiv);
 //#endregion panel bar
 
 //#region content
@@ -27,7 +27,7 @@ const contentDiv = createElement("div", {
   className: "content-div",
 });
 
-contentDiv.append(  );
+contentDiv.append();
 //#endregion content
 
-homePanel.append( panelBar, contentDiv );
+homePanel.append(panelBar, contentDiv);

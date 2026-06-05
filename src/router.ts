@@ -11,24 +11,26 @@ type HashHandler = (attr: string[]) => void;
 type Route = Record<string, [HTMLDivElement, Route?, HashHandler?]>;
 
 const mainRoute: Route = {
-  ""          : [homePanel],
-  "#home"     : [homePanel],
-  "#example"  : [examplePanel],
-  "#settings" : [settingsPanel],
-}
+  "": [homePanel],
+  "#home": [homePanel],
+  "#example": [examplePanel],
+  "#settings": [settingsPanel],
+};
 
-function defaultHash() { window.location.hash = "#home";}
+function defaultHash() {
+  window.location.hash = "#home";
+}
 
 function handle() {
   const hashParts = window.location.hash.split("&");
-  
+
   const locationHash = hashParts[0] || "";
   const attributesHash = hashParts.slice(1);
-  
-  const hashHandler = handleLocaton( locationHash );
-  
+
+  const hashHandler = handleLocaton(locationHash);
+
   if (!hashHandler) return;
-  
+
   hashHandler(attributesHash);
 }
 
@@ -37,21 +39,21 @@ function handleLocaton(locationS: string) {
     defaultHash();
     return;
   }
-  
-  let hashHandler: HashHandler|undefined;
-  let parentRoute: Route|undefined = mainRoute;
-  
+
+  let hashHandler: HashHandler | undefined;
+  let parentRoute: Route | undefined = mainRoute;
+
   const locationStack = locationS.split("/");
-  
+
   locationStack.forEach((path, index) => {
     if (!parentRoute) return;
-    
+
     const info = parentRoute[path];
     if (!info) {
       defaultHash();
       return;
     }
-    
+
     const targetPanel = info[0];
     parentRoute = info[1];
 
@@ -62,14 +64,14 @@ function handleLocaton(locationS: string) {
 
     if (index == locationStack.length - 1) showPanel(targetPanel);
   });
-  
+
   return hashHandler;
 }
 
 function showPanel(panel: HTMLDivElement, animation = true) {
   if (panelContainer.firstChild)
-    panelContainer.removeChild( panelContainer.firstChild );
-  panelContainer.appendChild( panel );
+    panelContainer.removeChild(panelContainer.firstChild);
+  panelContainer.appendChild(panel);
 
   if (animation) return;
 }

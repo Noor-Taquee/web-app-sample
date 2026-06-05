@@ -1,25 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
   --primary-header-font: 800 34px "Montserrat";
   --secondary-header-font: 900 25px "Montserrat";
-  
+
   --primary-text-font: 400 16px "Nunito";
   --secondary-text-font: 400 21px "Nunito";
-  
+
   --large-icon: 33px;
   --medium-icon: 24px;
   --small-icon: 15px;
 }
 
 * {
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -36,11 +38,11 @@ html, body {
   flex-shrink: 0;
   height: 100%;
   width: 100%;
-  
+
   overflow: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  
+
   display: flex;
 }
 
@@ -48,10 +50,10 @@ html, body {
   flex-shrink: 0;
   height: 100%;
   width: 100%;
-  
+
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  
+
   display: flex;
   flex-direction: column;
 }
@@ -60,7 +62,7 @@ html, body {
   height: fit-content;
   width: 100%;
   padding: 10px;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,14 +71,14 @@ html, body {
 .content-div {
   flex-grow: 1;
   width: 100%;
-  
+
   display: flex;
   flex-direction: column;
 }
 
 .header-div {
   width: 100%;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +87,7 @@ html, body {
 .content {
   height: fit-content;
   width: 100%;
-  
+
   display: flex;
   flex-direction: column;
 }
@@ -129,22 +131,24 @@ html, body {
 
 .action-btn {
   --height: 70px;
-  
+
   cursor: pointer;
   height: var(--height);
   width: fit-content;
   padding: 0 25px;
   margin: 5px auto;
-  
+
   border: none;
-  border-radius: calc(var(--height)/2);
+  border-radius: calc(var(--height) / 2);
 
   display: flex;
   align-items: center;
   gap: 15px;
   background-color: var(--primary-text-color);
 
-  &.centered { margin: auto; }
+  &.centered {
+    margin: auto;
+  }
   p {
     color: var(--primary-bg);
     font: var(--secondary-header-font);

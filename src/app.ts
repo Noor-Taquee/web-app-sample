@@ -10,4 +10,4 @@ export const panelContainer = createElement("div", {
   className: "panel-container",
 });
 
-app.append( panelContainer, navBar );
+app.append(panelContainer, navBar);

@@ -6,10 +6,6 @@
   "editor.lineHeight": 1.5,
   "editor.cursorSmoothCaretAnimation": "on",
   //#endregion: font
-  
-  //#region: MARK: theme
-  "workbench.colorTheme": "Night Owl",
-  //#endregion: theme
 
   //#region: MARK: formating
   "editor.tabSize": 2,
@@ -24,13 +20,13 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   //#endregion: formating
-  
+
   //#region: MARK: snippets
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   // Forces snippets to show up at the top of the autocomplete box
   "editor.snippetSuggestions": "top",
-  
+
   // Enables snippet autocompletion inside text, code, strings, and markdown
   "editor.quickSuggestions": {
     "other": "on",
@@ -40,6 +36,5 @@
   //#endregion: snippets
 
   "git.enableSmartCommit": true,
-  "explorer.confirmDragAndDrop": false,
-  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always"
 }

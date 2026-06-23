@@ -1,4 +1,4 @@
-import "./navigation.css";
+import "./style.css";
 import { createElement } from "../../utils/create-dom.js";
 
 export const navBar = createElement("div", {

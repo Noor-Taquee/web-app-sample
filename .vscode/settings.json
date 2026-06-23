@@ -7,6 +7,32 @@
   "editor.cursorSmoothCaretAnimation": "on",
   //#endregion: font
 
+  "files.autoSave": "off",
+
+  //#region: MARK: snippets
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.snippetSuggestions": "inline",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  //#endregion: snippets
+
+  // #region: MARK: Git
+  "git.enableSmartCommit": false,
+  // #region: Git
+
+  // #region: MARK: JS/TS
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.inlayHints.parameterNames.enabled": "all",
+  "js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
+  "js/ts.inlayHints.parameterTypes.enabled": true,
+  "js/ts.inlayHints.propertyDeclarationTypes.enabled": true,
+  "js/ts.inlayHints.variableTypes.enabled": true,
+  // #region: JS/TS
+
   //#region: MARK: formating
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
@@ -30,28 +56,6 @@
       "strings": "off",
       "other": "off"
     }
-  },
+  }
   //#endregion: formating
-
-  //#region: MARK: snippets
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.snippetSuggestions": "inline",
-
-  // Enables snippet autocompletion inside text, code, strings, and markdown
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "on",
-    "strings": "on"
-  },
-  //#endregion: snippets
-
-  // #region: MARK: js/ts
-  "js/ts.updateImportsOnFileMove.enabled": "always",
-  // #endregion: js/ts
-
-  // #region: MARK: Git
-  "git.enableSmartCommit": false,
-  "files.autoSave": "off"
-  // #region: Git
 }

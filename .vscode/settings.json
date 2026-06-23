@@ -36,7 +36,7 @@
   //#region: MARK: snippets
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.snippetSuggestions": "top",
+  "editor.snippetSuggestions": "inline",
 
   // Enables snippet autocompletion inside text, code, strings, and markdown
   "editor.quickSuggestions": {
@@ -51,6 +51,7 @@
   // #endregion: js/ts
 
   // #region: MARK: Git
-  "git.enableSmartCommit": false
+  "git.enableSmartCommit": false,
+  "files.autoSave": "off"
   // #region: Git
 }

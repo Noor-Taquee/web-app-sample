@@ -2,7 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["ts-vite"]
+  pull_request:
+    branches: [ts-vite]
   workflow_dispatch:
 
 permissions:

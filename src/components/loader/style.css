@@ -1,0 +1,22 @@
+#loading-panel {
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-text {
+  font: var(--primary-font);
+}
+
+.loading-icon {
+  font-size: 40px;
+}
+
+.spin {
+  animation: spin infinite 650ms linear;
+}
+
+@keyframes spin {
+  to {
+    rotate: 360deg;
+  }
+}

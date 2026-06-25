@@ -39,5 +39,11 @@
     "moduleDetection": "force",
     "skipLibCheck": true
   },
-  "exclude": ["node_modules", "dist", "vite.config.ts", "eslint.config.js"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "vite.config.ts",
+    "eslint.config.js",
+    "tests"
+  ]
 }

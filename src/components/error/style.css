@@ -1,0 +1,39 @@
+#error-panel {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.error-icon {
+  color: #cf4c4c !important;
+  font-size: 50px;
+}
+
+.error-text {
+  font: var(--primary-font);
+  color: #cf4c4c !important;
+}
+
+.error-btn {
+  --height: 45px;
+  height: var(--height);
+  width: fit-content;
+  margin: 10px 0;
+  padding: 16px;
+  border: none;
+  border-radius: calc(var(--height) / 2);
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--accent);
+
+  i {
+    font-size: 24px;
+    color: var(--primary-bg);
+  }
+  p {
+    font: var(--primary-font);
+    color: var(--primary-bg);
+  }
+}

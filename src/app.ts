@@ -1,5 +1,6 @@
+import "./app.css";
+
 import { createElement } from "./utils/create-dom.js";
-import { navBar } from "./components/navigation/script.js";
 
 export const app = document.getElementById("app") as HTMLDivElement;
 
@@ -10,4 +11,4 @@ export const panelContainer = createElement("div", {
   className: "panel-container",
 });
 
-app.append(panelContainer, navBar);
+app.appendChild(panelContainer);

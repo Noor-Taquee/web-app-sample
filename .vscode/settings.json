@@ -3,7 +3,7 @@
   "editor.fontFamily": "'Google Sans Code', JetBrains Mono, Consolas, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
-  "editor.lineHeight": 1.5,
+  "editor.lineHeight": 1.618,
   "editor.cursorSmoothCaretAnimation": "on",
   //#endregion: font
 

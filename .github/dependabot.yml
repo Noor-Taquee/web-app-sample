@@ -5,8 +5,10 @@ updates:
     schedule:
       interval: "weekly"
       day: monday
-      timezone: Asia/Kolkata
       time: "05:00"
+      timezone: Asia/Kolkata
+    commit-message:
+      prefix: "build(deps)"
     open-pull-requests-limit: 5
     labels:
       - "dependencies"

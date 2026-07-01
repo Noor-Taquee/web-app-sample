@@ -10,11 +10,50 @@ Thank you for your interest in contributing to this project.
 
 ## Development
 
-1. Fork the repository.
-2. Create a branch for your change.
-3. Make your changes.
-4. Test your work locally.
-5. Open a pull request with a clear description of the change.
+- Fork the repository.
+
+```bash
+git clone https://github.com/Noor-Taquee/web-app-sample.git
+cd web-app-sample
+```
+
+- Create a branch for your change.
+
+```bash
+git checkout ts-vite
+git pull origin ts-vite
+git checkout -b feature/<your-change>
+```
+
+- Install dependencies
+
+```bash
+npm ci
+```
+
+- Development server
+
+```bash
+npm run dev
+```
+
+- Make your changes.
+
+- Test your work locally.
+
+```bash
+npm run build
+npm run preview
+```
+
+- Format and lint your code before committing.
+
+```bash
+npm run format
+npm run lint
+```
+
+- Open a pull request with a clear description of the change.
 
 ## Pull Requests
 
